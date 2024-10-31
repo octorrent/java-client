@@ -16,11 +16,6 @@
     -fx-background-color: #ff0000;
 }
 
-.tab-header-background {
-    -fx-background-radius: 20px 20px 0 0;
-    -fx-background-color: #242424;
-}
-
 .tab {
     -fx-background-radius: 20px;
     -fx-background-color: transparent;
@@ -28,12 +23,30 @@
     -fx-faint-focus-color: transparent; /* Remove faint focus outline */
 }
 
+.tab-header-area {
+    -fx-padding: 10px;
+}
+
+.tab-header-background {
+    -fx-background-radius: 20px 20px 0 0;
+    -fx-background-color: #242424;
+}
+
+.tab:hover {
+    -fx-background-color: #343434;
+}
+
 .tab:selected {
-    -fx-background-color: #ff0000;
+    -fx-text-fill: #141414;
+    -fx-background-color: #994ce0;
 }
 
 .tab-label {
-    -fx-text-fill: white;
+    -fx-text-fill: #e6e6e6;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: #141414;
 }
 
 
