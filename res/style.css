@@ -7,13 +7,21 @@
     -fx-background-color: #141414;
 }
 
+.context-menu {
+    -fx-background-color: #141414;
+}
+
+.menu .label {
+    -fx-text-fill: #e6e6e6;
+}
+
 .menu-item {
     -fx-background-color: #141414;
 }
 
 .menu:hover,
         .menu-item:hover {
-    -fx-background-color: #ff0000;
+    -fx-background-color: #343434;
 }
 
 .tab-header-area {
