@@ -15,7 +15,9 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage)throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/window.fxml"));
-        primaryStage.setTitle("OcTorrent");
+        primaryStage.setTitle("OcTorrent - Java");
+        primaryStage.setMinWidth(350);
+        primaryStage.setMinHeight(400);
 
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
