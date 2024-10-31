@@ -9,6 +9,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.ImageView?>
+
+<?import javafx.scene.layout.Priority?>
 <VBox xmlns="http://javafx.com/javafx/8.0.111"
       xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.octorrent.java.MainWindowController"
@@ -109,4 +113,13 @@
             </Tab>
         </tabs>
     </TabPane>
+
+    <HBox fx:id="statusbar" spacing="6" alignment="CENTER_RIGHT">
+        <Label text="25.00 MB"/>
+        <ImageView fx:id="imageView1" fitWidth="50" fitHeight="50" />
+        <Label text="25.00 MB"/>
+        <ImageView fx:id="imageView2" fitWidth="50" fitHeight="50" />
+        <Label text="Ratio: 0.0"/>
+        <ImageView fx:id="imageView3" fitWidth="50" fitHeight="50" />
+    </HBox>
 </VBox>

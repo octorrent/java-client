@@ -29,14 +29,14 @@
 }
 
 .tab-header-area {
-    -fx-padding: 20px 5px 10px 5px;
+    -fx-padding: 16px 5px 10px 5px;
 }
 
 .tab-header-background {
     -fx-background-radius: 20px 20px 0 0;
     -fx-background-color: #242424;
-    -fx-border-insets: 10px 0 0 0;
-    -fx-background-insets: 10px 0 0 0;
+    -fx-border-insets: 6px 0 0 0;
+    -fx-background-insets: 6px 0 0 0;
 }
 
 .tab {
