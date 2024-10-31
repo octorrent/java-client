@@ -11,11 +11,6 @@ public class MainWindowController {
     private Label label;  // Connects with the Label in the FXML file
 
     @FXML
-    private void handleButtonClick(){
-        System.out.println("Clicked");
-    }
-
-    @FXML
     private void onOpenTorrentAction(){
 
     }

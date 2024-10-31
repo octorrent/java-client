@@ -7,6 +7,9 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
 <VBox xmlns="http://javafx.com/javafx/8.0.111"
       xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.octorrent.java.MainWindowController"
@@ -80,6 +83,31 @@
         </Menu>
     </MenuBar>
 
-    <Label text="Welcome to JavaFX!" />
-    <Button text="Click Me" onAction="#handleButtonClick" />
+    <TabPane>
+        <tabs>
+            <Tab text="ALL" closable="false">
+                <content>
+                    <AnchorPane>
+                        <Label text="Content for Tab 1" />
+                    </AnchorPane>
+                </content>
+            </Tab>
+
+            <Tab text="DOWNLOADING" closable="false">
+                <content>
+                    <AnchorPane>
+                        <Label text="Content for Tab 2" />
+                    </AnchorPane>
+                </content>
+            </Tab>
+
+            <Tab text="COMPLETED" closable="false">
+                <content>
+                    <AnchorPane>
+                        <Label text="Content for Tab 3" />
+                    </AnchorPane>
+                </content>
+            </Tab>
+        </tabs>
+    </TabPane>
 </VBox>
