@@ -13,16 +13,15 @@ public class Main extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/MainWindow.fxml"));
+    public void start(Stage primaryStage)throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("/window.fxml"));
         primaryStage.setTitle("OcTorrent");
-        primaryStage.setScene(new Scene(root));
 
-        /*
         Scene scene = new Scene(root);
-        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         primaryStage.setScene(scene);
-        */
+
+        scene.getStylesheets().add(getClass().getResource("/style.css").toExternalForm());
+        primaryStage.setScene(scene);
 
         primaryStage.show();
     }
