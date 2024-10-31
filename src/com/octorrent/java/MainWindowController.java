@@ -3,7 +3,9 @@ package com.octorrent.java;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class MainWindow {
+import java.awt.event.ActionEvent;
+
+public class MainWindowController {
 
     @FXML
     private Label label;  // Connects with the Label in the FXML file
@@ -11,5 +13,10 @@ public class MainWindow {
     @FXML
     private void handleButtonClick(){
         System.out.println("Clicked");
+    }
+
+    @FXML
+    private void onOpenTorrentAction(){
+
     }
 }

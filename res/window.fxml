@@ -8,13 +8,20 @@
 
 <VBox xmlns="http://javafx.com/javafx/8.0.111"
         xmlns:fx="http://javafx.com/fxml/1"
-        fx:controller="com.octorrent.java.MainWindow"
+        fx:controller="com.octorrent.java.MainWindowController"
         prefWidth="420.0"
         prefHeight="700.0">
 
     <MenuBar>
-        <Menu text="File">
-            <MenuItem text="New" />
+        <Menu text="_File">
+            <MenuItem text="_Open" accelerator="Ctrl+O" onAction="#onOpenTorrentAction" />
+            <MenuItem text="Open _URL..." accelerator="Ctrl+U" onAction="#onOpenTorrentAction" />
+            <MenuItem text="_New..." accelerator="Ctrl+N" onAction="#onOpenTorrentAction" />
+
+            <MenuItem text="_Start All" onAction="#onOpenTorrentAction" />
+            <MenuItem text="_Pause All" onAction="#onOpenTorrentAction" />
+
+            <MenuItem text="_Quit" accelerator="Ctrl+Q" onAction="#onOpenTorrentAction" />
         </Menu>
     </MenuBar>
 
