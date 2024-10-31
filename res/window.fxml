@@ -82,7 +82,7 @@
         </Menu>
     </MenuBar>
 
-    <TabPane>
+    <TabPane VBox.vgrow="ALWAYS">
         <tabs>
             <Tab text="ALL" closable="false">
                 <content>
