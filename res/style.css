@@ -16,20 +16,25 @@
     -fx-background-color: #ff0000;
 }
 
-.tab {
-    -fx-background-radius: 20px;
-    -fx-background-color: transparent;
-    -fx-focus-color: transparent; /* Remove focus outline */
-    -fx-faint-focus-color: transparent; /* Remove faint focus outline */
-}
-
 .tab-header-area {
-    -fx-padding: 10px;
+    -fx-padding: 20px 5px 10px 5px;
 }
 
 .tab-header-background {
     -fx-background-radius: 20px 20px 0 0;
     -fx-background-color: #242424;
+    -fx-border-insets: 10px 0 0 0;
+    -fx-background-insets: 10px 0 0 0;
+}
+
+.tab {
+    -fx-padding: 2.5px 20px;
+    -fx-border-insets: 0 5px;
+    -fx-background-insets: 0 5px;
+    -fx-background-radius: 20px;
+    -fx-background-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
 }
 
 .tab:hover {
@@ -47,6 +52,10 @@
 
 .tab:selected .tab-label {
     -fx-text-fill: #141414;
+}
+
+.tab-content-area {
+    -fx-background-color: #242424;
 }
 
 
