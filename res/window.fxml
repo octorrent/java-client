@@ -51,6 +51,33 @@
             <MenuItem text="Remove torrent" accelerator="Delete" onAction="#onOpenTorrentAction" />
             <MenuItem text="_Delete Files and Remove" accelerator="Shift+Delete" onAction="#onOpenTorrentAction" />
         </Menu>
+        <Menu text="_View">
+            <MenuItem text="_Compact View" accelerator="Alt+C" onAction="#onOpenTorrentAction" />
+            <SeparatorMenuItem />
+            <MenuItem text="_Toolbar" onAction="#onOpenTorrentAction" />
+            <MenuItem text="_Filterbar" onAction="#onOpenTorrentAction" />
+            <MenuItem text="_Statusbar" onAction="#onOpenTorrentAction" />
+            <SeparatorMenuItem />
+            <MenuItem text="Sort by _Activity" onAction="#onOpenTorrentAction" />
+            <MenuItem text="Sort by A_ge" onAction="#onOpenTorrentAction" />
+            <MenuItem text="Sort by _Name" onAction="#onOpenTorrentAction" />
+            <MenuItem text="Sort by _Progress" onAction="#onOpenTorrentAction" />
+            <MenuItem text="Sort by _Queue" onAction="#onOpenTorrentAction" />
+            <MenuItem text="Sort by Rati_o" onAction="#onOpenTorrentAction" />
+            <MenuItem text="Sort by Si_ze" onAction="#onOpenTorrentAction" />
+            <MenuItem text="Sort by Stat_e" onAction="#onOpenTorrentAction" />
+            <MenuItem text="Sort by Time _Left" onAction="#onOpenTorrentAction" />
+            <SeparatorMenuItem />
+            <MenuItem text="Re_verse Sort Order" onAction="#onOpenTorrentAction" />
+        </Menu>
+        <Menu text="_Help">
+            <MenuItem text="Message _Log" onAction="#onOpenTorrentAction" />
+            <MenuItem text="_Statistics" onAction="#onOpenTorrentAction" />
+            <MenuItem text="_Donate" onAction="#onOpenTorrentAction" />
+            <SeparatorMenuItem />
+            <MenuItem text="_Contents" accelerator="F1" onAction="#onOpenTorrentAction" />
+            <MenuItem text="_About" onAction="#onOpenTorrentAction" />
+        </Menu>
     </MenuBar>
 
     <Label text="Welcome to JavaFX!" />
