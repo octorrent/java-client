@@ -1,5 +1,5 @@
 .root {
-    -fx-background-color: #141414; /* SeaGreen */
+    -fx-background-color: #141414;
 }
 
 .menu-bar,
@@ -13,6 +13,10 @@
 
 .menu .label {
     -fx-text-fill: #e6e6e6;
+}
+
+.context-menu .accelerator-text {
+    -fx-text-fill: #b3b3b3;
 }
 
 .menu-item {
