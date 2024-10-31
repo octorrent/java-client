@@ -24,6 +24,33 @@
             <SeparatorMenuItem />
             <MenuItem text="_Quit" accelerator="Ctrl+Q" onAction="#onOpenTorrentAction" />
         </Menu>
+        <Menu text="_Edit">
+            <MenuItem text="Select _All" accelerator="Ctrl+A" onAction="#onOpenTorrentAction" />
+            <MenuItem text="Dese_lect All" accelerator="Shift+Ctrl+A" onAction="#onOpenTorrentAction" />
+            <SeparatorMenuItem />
+            <MenuItem text="_Preferences" onAction="#onOpenTorrentAction" />
+        </Menu>
+        <Menu text="_Torrent">
+            <MenuItem text="_Properties" accelerator="Alt+Return" onAction="#onOpenTorrentAction" />
+            <MenuItem text="Open Fold_er" accelerator="Ctrl+E" onAction="#onOpenTorrentAction" />
+            <SeparatorMenuItem />
+            <MenuItem text="_Start" accelerator="Ctrl+S" onAction="#onOpenTorrentAction" />
+            <MenuItem text="Ask Tracker for _More Peers" onAction="#onOpenTorrentAction" />
+            <Menu text="_Queue">
+                <MenuItem text="Move to _Top" onAction="#onOpenTorrentAction" />
+                <MenuItem text="Move _Up" onAction="#onOpenTorrentAction" />
+                <MenuItem text="Move _Down" onAction="#onOpenTorrentAction" />
+                <MenuItem text="Move to _Bottom" onAction="#onOpenTorrentAction" />
+            </Menu>
+            <MenuItem text="_Pause" accelerator="Ctrl+P" onAction="#onOpenTorrentAction" />
+            <SeparatorMenuItem />
+            <MenuItem text="Set _Location…" onAction="#onOpenTorrentAction" />
+            <MenuItem text="_Verify Local Data" accelerator="Ctrl+V" onAction="#onOpenTorrentAction" />
+            <MenuItem text="Copy _Magnet Link to Clipboard" onAction="#onOpenTorrentAction" />
+            <SeparatorMenuItem />
+            <MenuItem text="Remove torrent" accelerator="Delete" onAction="#onOpenTorrentAction" />
+            <MenuItem text="_Delete Files and Remove" accelerator="Shift+Delete" onAction="#onOpenTorrentAction" />
+        </Menu>
     </MenuBar>
 
     <Label text="Welcome to JavaFX!" />
