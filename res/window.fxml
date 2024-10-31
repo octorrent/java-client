@@ -13,6 +13,7 @@
 <?import javafx.scene.image.ImageView?>
 
 <?import javafx.scene.layout.Priority?>
+<?import javafx.scene.layout.Region?>
 <VBox xmlns="http://javafx.com/javafx/8.0.111"
       xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.octorrent.java.MainWindowController"
@@ -114,12 +115,15 @@
         </tabs>
     </TabPane>
 
-    <HBox fx:id="statusbar" spacing="6" alignment="CENTER_RIGHT">
-        <Label text="25.00 MB"/>
-        <ImageView fx:id="imageView1" fitWidth="50" fitHeight="50" />
-        <Label text="25.00 MB"/>
-        <ImageView fx:id="imageView2" fitWidth="50" fitHeight="50" />
-        <Label text="Ratio: 0.0"/>
-        <ImageView fx:id="imageView3" fitWidth="50" fitHeight="50" />
-    </HBox>
+    <AnchorPane fx:id="statusbar">
+        <HBox spacing="6" alignment="CENTER" AnchorPane.rightAnchor="0">
+            <Label text="25.00 MB" />
+            <ImageView fx:id="download_icon" fitWidth="18" fitHeight="18" />
+            <Label text="25.00 MB" />
+            <ImageView fx:id="upload_icon" fitWidth="18" fitHeight="18" />
+            <Label text="Ratio: 0.0" />
+            <ImageView fx:id="ratio_icon" fitWidth="18" fitHeight="18" />
+            <Region HBox.hgrow="SOMETIMES" />
+        </HBox>
+    </AnchorPane>
 </VBox>

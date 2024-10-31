@@ -70,4 +70,12 @@
     -fx-background-color: #242424;
 }
 
+#statusbar {
+    -fx-padding: 4px;
+    -fx-background-color: #242424;
+}
+
+#statusbar .label {
+    -fx-text-fill: #e6e6e6;
+}
 
