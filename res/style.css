@@ -1,3 +1,17 @@
 .root {
     -fx-background-color: #141414; /* SeaGreen */
 }
+
+.menu-bar,
+        .menu {
+    -fx-background-color: #141414;
+}
+
+.menu-item {
+    -fx-background-color: #141414;
+}
+
+.menu:hover,
+        .menu-item:hover {
+    -fx-background-color: #ff0000;
+}
