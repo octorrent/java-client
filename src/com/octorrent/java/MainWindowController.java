@@ -29,9 +29,10 @@ public class MainWindowController {
 
     private Node createRow(Torrent torrent){
         HBox hbox = new HBox();
-        hbox.getStyleClass().add("hbox");
+        hbox.getStyleClass().add("list-item");
 
         ImageView icon = new ImageView();
+        icon.setId("icon");
         icon.setFitWidth(50);
         icon.setFitHeight(50);
         //hbox.getChildren().add(icon);
@@ -42,22 +43,26 @@ public class MainWindowController {
         HBox.setHgrow(vbox, Priority.ALWAYS);
 
         Label title = new Label();
+        title.setId("title");
         title.setMaxWidth(Double.MAX_VALUE);
         title.setText(torrent.getTitle());
 
-        ProgressBar progress = new ProgressBar();
-        progress.setMaxWidth(Double.MAX_VALUE);
-        progress.setProgress(0.5);
-
         Label status = new Label();
+        status.setId("status");
         status.setMaxWidth(Double.MAX_VALUE);
         status.setText("adasdasdsad");
 
+        ProgressBar progress = new ProgressBar();
+        progress.setId("progress");
+        progress.setMaxWidth(Double.MAX_VALUE);
+        progress.setProgress(0.5);
+
         Label description = new Label();
+        description.setId("description");
         description.setMaxWidth(Double.MAX_VALUE);
         description.setText("adasdasdsad");
 
-        vbox.getChildren().addAll(title, progress, status, description);
+        vbox.getChildren().addAll(title, status, progress, description);
         hbox.getChildren().addAll(icon, vbox);
 
         return hbox;
