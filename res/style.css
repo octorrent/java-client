@@ -79,3 +79,11 @@
     -fx-text-fill: #e6e6e6;
 }
 
+.hbox {
+    -fx-background-color: #ff0000;
+}
+
+.vbox {
+    -fx-background-color: #ff00ff;
+}
+
