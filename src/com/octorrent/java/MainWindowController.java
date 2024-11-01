@@ -14,4 +14,9 @@ public class MainWindowController {
     private void onOpenTorrentAction(){
 
     }
+
+    @FXML
+    private void onQuitAction(){
+        System.exit(0);
+    }
 }

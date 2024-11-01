@@ -29,7 +29,7 @@
             <MenuItem text="_Start All" onAction="#onOpenTorrentAction" />
             <MenuItem text="_Pause All" onAction="#onOpenTorrentAction" />
             <SeparatorMenuItem />
-            <MenuItem text="_Quit" accelerator="Ctrl+Q" onAction="#onOpenTorrentAction" />
+            <MenuItem text="_Quit" accelerator="Ctrl+Q" onAction="#onQuitAction" />
         </Menu>
         <Menu text="_Edit">
             <MenuItem text="Select _All" accelerator="Ctrl+A" onAction="#onOpenTorrentAction" />
