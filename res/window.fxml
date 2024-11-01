@@ -14,6 +14,7 @@
 
 <?import javafx.scene.layout.Region?>
 
+<?import javafx.scene.control.ScrollPane?>
 <VBox xmlns="http://javafx.com/javafx/8.0.111"
       xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.octorrent.java.MainWindowController"
@@ -91,25 +92,19 @@
         <tabs>
             <Tab text="ALL" closable="false">
                 <content>
-                    <AnchorPane fx:id="all_tab_layout">
-                        <Label text="Content for Tab 1" />
-                    </AnchorPane>
+                    <ScrollPane fx:id="allTabLayout" fitToWidth="true" fitToHeight="true" />
                 </content>
             </Tab>
 
             <Tab text="DOWNLOADING" closable="false">
                 <content>
-                    <AnchorPane fx:id="downloading_tab_layout">
-                        <Label text="Content for Tab 2" />
-                    </AnchorPane>
+                    <ScrollPane fx:id="downloadingTabLayout" fitToWidth="true" fitToHeight="true" />
                 </content>
             </Tab>
 
             <Tab text="COMPLETED" closable="false">
                 <content>
-                    <AnchorPane fx:id="completed_tab_layout">
-                        <Label text="Content for Tab 3" />
-                    </AnchorPane>
+                    <ScrollPane fx:id="completedTabLayout" fitToWidth="true" fitToHeight="true" />
                 </content>
             </Tab>
         </tabs>
@@ -118,11 +113,11 @@
     <AnchorPane fx:id="statusbar">
         <HBox spacing="6" alignment="CENTER" AnchorPane.rightAnchor="0">
             <Label text="25.00 MB" />
-            <ImageView fx:id="download_icon" fitWidth="18" fitHeight="18" />
+            <ImageView fx:id="downloadIcon" fitWidth="18" fitHeight="18" />
             <Label text="25.00 MB" />
-            <ImageView fx:id="upload_icon" fitWidth="18" fitHeight="18" />
+            <ImageView fx:id="uploadIcon" fitWidth="18" fitHeight="18" />
             <Label text="Ratio: 0.0" />
-            <ImageView fx:id="ratio_icon" fitWidth="18" fitHeight="18" />
+            <ImageView fx:id="ratioIcon" fitWidth="18" fitHeight="18" />
             <Region HBox.hgrow="SOMETIMES" />
         </HBox>
     </AnchorPane>
