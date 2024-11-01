@@ -12,8 +12,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.image.ImageView?>
 
-<?import javafx.scene.layout.Priority?>
 <?import javafx.scene.layout.Region?>
+
 <VBox xmlns="http://javafx.com/javafx/8.0.111"
       xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.octorrent.java.MainWindowController"
@@ -91,7 +91,7 @@
         <tabs>
             <Tab text="ALL" closable="false">
                 <content>
-                    <AnchorPane>
+                    <AnchorPane fx:id="all_tab_layout">
                         <Label text="Content for Tab 1" />
                     </AnchorPane>
                 </content>
@@ -99,7 +99,7 @@
 
             <Tab text="DOWNLOADING" closable="false">
                 <content>
-                    <AnchorPane>
+                    <AnchorPane fx:id="downloading_tab_layout">
                         <Label text="Content for Tab 2" />
                     </AnchorPane>
                 </content>
@@ -107,7 +107,7 @@
 
             <Tab text="COMPLETED" closable="false">
                 <content>
-                    <AnchorPane>
+                    <AnchorPane fx:id="completed_tab_layout">
                         <Label text="Content for Tab 3" />
                     </AnchorPane>
                 </content>
