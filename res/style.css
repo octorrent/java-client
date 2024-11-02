@@ -92,13 +92,14 @@
 }
 
 .list-item #title {
-    -fx-font-size: 16px;
+    -fx-font-size: 14px;
     -fx-font-weight: bold;
     -fx-text-fill: #e6e6e6;
 }
 
 .list-item #status,
         .list-item #description {
+    -fx-font-size: 12px;
     -fx-text-fill: #b3b3b3;
 }
 
