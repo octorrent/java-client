@@ -16,11 +16,23 @@ public class MainWindowController {
     private ScrollPane allTabLayout;
 
     @FXML
+    private ScrollPane downloadingTabLayout;
+
+    @FXML
+    private ScrollPane completeTabLayout;
+
+    @FXML
     public void initialize(){
         ListView<Node> listView = new ListView<>();
         listView.getItems().add(createRow(new Torrent("ubuntu-21.10-desktop-amd64.iso")));
 
         allTabLayout.setContent(listView);
+
+
+        listView = new ListView<>();
+        listView.getItems().add(createRow(new Torrent("ubuntu-21.10-desktop-amd64.iso")));
+
+        downloadingTabLayout.setContent(listView);
     }
 
     private Node createRow(Torrent torrent){
