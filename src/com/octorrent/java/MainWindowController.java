@@ -18,7 +18,7 @@ public class MainWindowController {
     @FXML
     public void initialize(){
         ListView<Node> listView = new ListView<>();
-        listView.getItems().add(createRow(new Torrent("asd")));
+        listView.getItems().add(createRow(new Torrent("ubuntu-21.10-desktop-amd64.iso")));
 
         allTabLayout.setContent(listView);
     }
@@ -45,7 +45,7 @@ public class MainWindowController {
         Label status = new Label();
         status.setId("status");
         status.setMaxWidth(Double.MAX_VALUE);
-        status.setText("adasdasdsad");
+        status.setText("624 MB of 3.12 GB - 2 min, 13 secs left");
 
         ProgressBar progress = new ProgressBar();
         progress.setId("progress");
@@ -55,7 +55,7 @@ public class MainWindowController {
         Label description = new Label();
         description.setId("description");
         description.setMaxWidth(Double.MAX_VALUE);
-        description.setText("adasdasdsad");
+        description.setText("Downloading from 45 of 50 connected peers");
 
         vbox.getChildren().addAll(title, status, progress, description);
         hbox.getChildren().addAll(icon, vbox);

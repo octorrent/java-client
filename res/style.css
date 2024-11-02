@@ -102,6 +102,10 @@
     -fx-text-fill: #b3b3b3;
 }
 
+.progress-bar {
+    -fx-padding: 4px 0;
+}
+
 .progress-bar .bar {
     -fx-background-color: #994ce0;
     -fx-padding: 6px;
