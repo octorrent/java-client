@@ -10,9 +10,6 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 
-import java.awt.*;
-import java.awt.event.ActionEvent;
-
 public class MainWindowController {
 
     @FXML
@@ -23,21 +20,19 @@ public class MainWindowController {
         ListView<Node> listView = new ListView<>();
         listView.getItems().add(createRow(new Torrent("asd")));
 
-
         allTabLayout.setContent(listView);
     }
 
     private Node createRow(Torrent torrent){
-        HBox hbox = new HBox();
+        HBox hbox = new HBox(5);
         hbox.getStyleClass().add("list-item");
 
         ImageView icon = new ImageView();
         icon.setId("icon");
         icon.setFitWidth(50);
         icon.setFitHeight(50);
-        //hbox.getChildren().add(icon);
 
-        VBox vbox = new VBox();
+        VBox vbox = new VBox(3);
         vbox.getStyleClass().add("vbox");
         vbox.setFillWidth(true);
         HBox.setHgrow(vbox, Priority.ALWAYS);

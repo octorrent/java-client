@@ -83,7 +83,6 @@
     -fx-background-color: #242424;
 }
 
-
 .list-cell {
     -fx-background-color: #242424;
 }
@@ -94,12 +93,29 @@
 
 .list-item #title {
     -fx-font-size: 16px;
+    -fx-font-weight: bold;
     -fx-text-fill: #e6e6e6;
 }
 
 .list-item #status,
         .list-item #description {
     -fx-text-fill: #b3b3b3;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #994ce0;
+    -fx-padding: 6px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.progress-bar > .track {
+    -fx-control-inner-background: #343434;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-box-border: transparent;
+    -fx-control-inner-background: transparent;
 }
 
 
