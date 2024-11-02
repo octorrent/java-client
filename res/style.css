@@ -109,7 +109,7 @@
 
 .progress-bar .bar {
     -fx-background-color: #994ce0;
-    -fx-padding: 6px;
+    -fx-padding: 4px;
     -fx-background-insets: 0;
     -fx-background-radius: 0;
 }
