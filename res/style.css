@@ -70,6 +70,10 @@
     -fx-background-color: #242424;
 }
 
+.scroll-pane > .viewport {
+    -fx-background-color: #242424;
+}
+
 #statusbar {
     -fx-padding: 4px;
     -fx-background-color: #242424;
