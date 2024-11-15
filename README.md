@@ -1,3 +1,3 @@
-# OcTorrent Java Client
+# SecTorrent Java Client
 
-This is the repository backing the official OcTorrent Java Client app.
+This is the repository backing the official SecTorrent Java Client app.
