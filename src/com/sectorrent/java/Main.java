@@ -1,4 +1,4 @@
-package com.octorrent.java;
+package com.sectorrent.java;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -15,7 +15,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage)throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/window.fxml"));
-        primaryStage.setTitle("OcTorrent - Java");
+        primaryStage.setTitle("SecTorrent - Java");
         primaryStage.setMinWidth(350);
         primaryStage.setMinHeight(400);
 

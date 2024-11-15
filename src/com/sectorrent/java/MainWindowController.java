@@ -1,6 +1,6 @@
-package com.octorrent.java;
+package com.sectorrent.java;
 
-import com.octorrent.java.handlers.Torrent;
+import com.sectorrent.java.handlers.Torrent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
